@@ -51,7 +51,7 @@ conan_basic_setup()""")
         cmake.build()
 
     def package(self):
-        self._cmake_configure()
+        cmake = self._cmake_configure()
         cmake.install()
 
     def package_info(self):
