@@ -2,7 +2,7 @@ resources:
   - name: seasocks_github
     type: GitRepo
     configuration:
-      path: danimtb/seasocks
+      path: danimtb/conan-seasocks
       gitProvider: danimtb_github
 
 pipelines:
@@ -37,7 +37,7 @@ pipelines:
         configuration:
           inputResources:
             - name: seasocks_github
-            - trigger: false
+              trigger: false
           inputSteps:
             - name: configure_environment
         execution:
